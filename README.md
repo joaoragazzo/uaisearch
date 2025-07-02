@@ -1,32 +1,68 @@
-# elastic-project
-A elastic search application
+# U🔺iSearch
 
+UaiSearch é uma engine de busca inteligente desenvolvida com **Spring Boot** e **Elasticsearch**, projetada para oferecer resultados relevantes mesmo com erros de digitação, sinônimos e expressões complexas.
 
-## TODO List (BACKEND)
+## 🚀 Tecnologias
 
-### Funcionalidades de pesquisa 
-- [ ] Pesquisar por correspondencia exata (entre aspas duplas)
-- [ ] Excluir conteúdos que tenham determinada palavra (ex: -resultado)
-- [ ] Clausula booleana (AND/OR/NOT)
-- [ ] Sugestões de correção automática
+![ElasticSearch](https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![SpringBoot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![StyledComponents](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-### Funcionalidades de filtragem de dados
-- [ ] Ordenar por tempo de leitura
-- [ ] Ordenar por relevância
+## 📦 Funcionalidades
 
-### Funcionalidades gerais
-- [ ] Histórico de pesquisa (6~7 últimas pesquisas, apenas)
-- [ ] Registro de usuário
-- [ ] Login de usuário
+- Correção de digitação (sugestão: "Você quis dizer...")
+- Interpretação de operadores lógicos (`"aspas"`, `created_at`, `reading_time`, `in_title`, `-`, `-in_title`, etc.)
+- Paginação de resultados
+- Controle de quantidade de resultados por página
+- Indexação de grandes volumes de dados (ex: Wikipedia)
+- Suporte a linguagem natural (snowball algorithm)
+- Resumo automático dos resultados (via API da OpenAi)
+- API REST para integração
+- Type-as-you-search
+- Sistema de favoritos e histórico de dados
+- Suporte para mais de 20 idiomas
+- Syntax Highlight
+- Acessibilidade para surdos
+- Design totalmente responsivo
+- Temperatura e clima em tempo real
+- Grafo de conexões
+- Indicadores de palavras chaves que casaram
+- Páginas de dicas de pesquisas
+- Teclado virtual
 
-## TODO List (FRONTEND)
+## 📁 Estrutura do Projeto
 
-### Telas principais
-- [x] Tela de pesquisa inicial
-- [x] Tela de pesquisa pós primeiro resultado
-- [ ] Tela de registro
-- [ ] Tela de login
+```
+uaisearch/
+├── backend/ # Aplicação SpringBoot
+├── frontend/ # Aplicação React + JavaScript
+├── crawler_wikipedia/ # Scrapping de dados da conexões da Wikipédia
+├── mock_server/ # Servidor de respostas definidas para desenvolvimento do frontend
+└── automated_translator/ # Tradutor automático para o i18n
+```
 
-### Componentes principais
-- [ ] Componente de resultado de pesquisa
-- [ ] Lógica de paginação
+## 📸 Preview
+
+<p align="center">
+  <img src="https://joaoragazzo.dev/uaisearch.png" width="30%" />
+  <img src="https://joaoragazzo.dev/uaisearch2.png" width="30%" />
+  <img src="https://joaoragazzo.dev/uaisearch3.png" width="30%" />
+</p>
+<p align="center">
+  <img src="https://joaoragazzo.dev/uaisearch4.png" width="30%" />
+  <img src="https://joaoragazzo.dev/uaisearch5.png" width="30%" />
+  <img src="https://joaoragazzo.dev/uaisearch6.png" width="30%" />
+</p>
+<p align="center">
+  <img src="https://joaoragazzo.dev/uaisearch7.png" width="30%" />
+</p>
+
+  
